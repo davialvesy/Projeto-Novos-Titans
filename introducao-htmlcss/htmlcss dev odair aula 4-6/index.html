@@ -1,0 +1,156 @@
+<!--
+    I. Estrutura Básica HTML
+
+        O HTML é uma linguagem de marcação de texto
+        extremamente usada em todo o mundo, basicamente
+        toda e qualquer página web tem HTML em sua composição.
+
+        Dessa forma, fica evidente que uma boa oorganização, e 
+        estrutura é obrigatória, e adiante iremos tratar dessa
+        organização.
+
+        A estrutura de um doc HTML é basicamente feita em blocos,
+        pode-se até ser comparável a uma organização de caixas
+
+        Veja,
+
+            <html>
+                <head>
+                    -CONTEUDO-
+                </head>
+                <body>
+                    -CONTEUDO-
+                </body>
+            </html>
+
+        Imaginando como caixas, você percebe que o conteúdo 
+        todo está dentro da tag HTML, ou seja, ela é a tag principal.
+        As tags body e head, estão dentro da tag HTML, e separadas
+        entre elas, desempenhando cada uma, papeis distintos.
+
+        Beleza, mas o que são essas tags HTML, head, body? O que são
+        tags no geral?
+
+    II. Tags em HTML
+
+        Novamente, voltando ao exemplo das caixas, uma tag representaria
+        uma caixa, o que significa que cada tag comporta um conteúdo diferente,
+        uma informação a ser passada ao navegador.
+
+        Por exemplo, 
+
+                <h1>conteudo</h1>
+                        X
+                <p>conteudo</p
+
+            As duas tags são de formatação de texto, mas desempenham funções
+            diferentes. A tag <h> posssui diversos tamanhos, de 1 a 6, e 
+            representa um cabeçalho, já a tag <p> representa um paragrafo.
+
+        Entendido o é uma tag, vamos entender como elas funcionam.
+
+        No geral, a grande maioria das tags possui um inicio, e um fechamento,
+        note que
+                <tag de inicio> conteudo </tag de fechamento>
+
+            A tag começa com o nome que a define entre < >, e fecha com o mesmo
+            nome, mas com o acrescimo de </ >. Entre essas duas tags, é onde vai
+            todo o conteúdo que será exibido na página web.
+        
+        Ademais, também existem as tags que não precisam da tag de fechamento,
+        como é o caso da tag <img>, que serve para exportar uma imagem para a página
+        web. Nesse sentido, tags simples, sem o fechamento, precisam ser complementadas
+        com os atributos
+
+        Observe
+
+                <img src='URL da imagem'>
+
+                Essa tag não tem fechamento, mas tem o complemento src contido nela,
+                que é responsável pelo diretório da imagem que será exibida
+
+                Trataremos dos atributos com mais calma adiante
+
+    III. Atributos em HTML
+
+        Os atributos são uma complementação das tags, onde se as tags são as
+        caixas, os atributos são etiquetas nessas caixas, dizendo qual conteúdo,
+        ou qual função a tag ira desempenhar
+
+        Veja,
+
+            <img src='URL' alt='Imagem'>  
+
+            Aqui, a tag <img> diz ao navegador que ali deve conter uma imagem,
+            o atributo src informa da onde a imagem virá, podendo ser um diretório,
+            ou um URL da web, e por fim, como medidad de segurança, caso a imagem
+            não carregue, o alt é responsável por informar que naquele local era
+            para estar uma imagem.
+
+        Vale informar que tags sem fechamento, e com fechamento podem usar atributos.
+
+    IV. Na Pratica
+
+        Agora que está bem colocado como é a estrutura, o que são as tags, e os atributos,
+        iremos por tudo isso em pratica a seguir, de maneira detalhada.
+-->
+<!DOCTYPE html>
+    <!--
+        A tag <!DOCTYPE html> especifica para o navegador qual a versão HTML iremos utilizar,
+        nesse caso utilizaremos a ultima versão HTML5
+    -->
+<html lang="en">
+    <!--
+        A tag <html lang="en"> é a tag principal do documento, ela armazena todo o conteúdo da 
+        página, e o atributo lang, serve para a acessibilidade do site, onde ele define qual o
+        idioma principal da página.
+    -->
+    <head>
+        <!--
+            A tag <head> com o nome já diz, é cabeça da página e faz parte da estrutura básica,
+            aqui você irá definir as características presentes do documento, essa alterações
+            não aparecem para o usuário final.
+        -->
+        <meta charset="UTF-8">
+        <!--
+            Define o conjunto de caracteres que a pagina reconhecerá, serve mais como medidad de 
+            segurança
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+            A tag <meta> trata da responsabilidade da tela para o usuário, ou seja, ela verifica
+            com qual dispositivo o usuário está acessando, dessa forma ajusta as dimensões da
+            página dependendo do dispositivo.
+        -->
+        <title>Estudo HTML</title>
+        <!--
+            Define o título da página
+        -->
+    </head>
+    <body>
+        <!--
+            A tag body também faz parte da estrutura básica, e é aqui onde é colocado
+            tudo que é escrito para nível usuário.
+
+            Portanto, aqui é onde seram feitos os parágrafos, exportações de imagens,
+            links de acesso, botões e etc.
+
+            Veja,
+        -->
+        <h1>Olá<br>Mundo!!!</h1>
+        <h2>Olá Mundo!!!</h2>
+        <h3>Olá Mundo!!!</h3>
+        <h4>Olá Mundo!!!</h4>
+        <h5>Olá Mundo!!!</h5>
+        <h6>Olá Mundo!!!</h6>
+
+        <p>Isso é um paragrafo em HTML, <br>veja como funciona</p>
+
+        <img src='https://th.bing.com/th/id/OIP.NFIf62lviHKRy4eNFSA_SQHaEK?w=329&h=184&c=7&r=0&o=7&pid=1.7&rm=3' alt="Imagem The Witcher">
+        <br>
+        <a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank">The Witcher 90% desconto</a>
+        <!--
+            A tag <a> é chamada de ancora, ela tem função de gerar um direcionador de link,
+        -->
+    </body>
+</html>
