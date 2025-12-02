@@ -1,0 +1,111 @@
+<!--
+    I. CSS
+
+        Como já visto, o HTML é o responsável apenas
+        pela escrita da página, não oferecendo nenhum
+        tipo de customização. É nesse ponto que entra o
+        CSS.
+
+        O CSS é uma liguagem de estilização e foi criada
+        justamente com a intenção de estilizar as páginas,
+        que antigamente eram feitas apenas com HTML.
+
+        A duas maneiras de colocar o CSS presente em nossa
+        página web.
+
+        I.I Inserido Junto ao Ambiente HTML
+
+            Dentro da tag <head>, basta adicionar a tag <style>, e
+            ali você gerencia as alterações.
+
+        I.II Documento a parte
+
+            A melhor maneira de inserir a estilização do CSS na
+            página web, é por meio de um documento externo feito
+            de CSS. Dessa forma, pelo doc HTMl você linka, usando
+            a tag <link rel="stylesheet" href="diretorio CSS"> dentro
+            da tag <head>.
+
+            Para o gerenciamento das modificações, você deve faze-las
+            no documento específico de CSS.
+    II. DIV
+
+        Para que os navegadores entendam o conteúdo da página HTML,
+        esse documento precisa seguir normas e padrões, e isso chamamos
+        de semântica, o que significa que as tags possuem funções diferentes
+        a desempenhar.
+
+        A tag <div> é basicamente uma tag que não é semântica,
+        uma simples tag genérica que serve apenas para agrupar 
+        outras tag.
+
+        II.I Funcionalidade
+
+            Como a div serve para agrupar outras tags, isso é muito
+            útil para o CSS, com isso possível fazer alterações em
+            blocos, onde você agrupo determinados elementos, e muda
+            o visual apenas deles, isso impede que elementos que você
+            não quer alterar mude junto dos outros.
+    
+    III. ID e CLASS
+
+        No CSS, se você alterar por e exemplo o <h1>, todo e qualquer <h1>
+        será alterado. Entretando, se for preciso que apenas um <h1> seja
+        alterado, ou caso tiver duas divs, e você precise alterar as duas
+        de maneira distinta.
+
+        É para isso que serve o ID e a CLASS em HTML, ela singularizam uma tag,
+        onde há várias semelhantes a ela no código.
+
+        Bom, mas qual a diferença?
+        Basicamente a diferença que existe, é que só pode exister um ID com o mesmo nome
+        no código, ouse ja
+
+            <div id="container">
+
+            </div>
+
+        Como a div está com o ID de container, só ela poderá ter esse ID, nenhuma outra tag
+        poderá usar aquele ID novamento no código.
+-->
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css"><!--TAG de link para o CSS-->
+    <!--
+        <style>/*I.I Primeira Forma de Estilização*/
+            
+            h1{
+                color: blue; /*Muda a Cor de Todo <h1>*/
+                background-color: red;/*Adiciona um BackGround em todo <h1>*/
+            }
+            p{
+                background-color: bisque;
+            }
+            div{
+                width: 300px;/*Diminui o BackGround apenas dos elementos presentes na DIV*/
+            }
+            
+        </style>
+    -->
+    </head>
+    <body>
+        <h1>Olá, mundo!</h1>
+
+        <div class="titulo">
+            <h1>Olá, mundo!!</h1>
+        </div>
+        <div class="titulo">
+            <h1>Hello, world!</h1>
+        </div>
+        <div id="id-titulo">
+            <h1>Olá mundo!!!</h1>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,20 @@
+/*
+    I.II Documentação a Parte
+
+        É aqui, nesse documento, que a magia da customização
+        acontece!
+
+        Aqui você consegue puxar toda e qualquer TAG la do HTML
+        e customizar, a criatividade aqui é o limite.
+*/
+h1{
+    color: crimson;
+}/*Altera Todos os h1*/
+
+.titulo h1{
+    color: darkslategrey;
+}/*Altera todos os h1 presentes da div titulo*/
+
+#id-titulo h1{
+    color: dodgerblue;
+}
