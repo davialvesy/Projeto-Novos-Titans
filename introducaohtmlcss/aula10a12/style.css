@@ -1,0 +1,76 @@
+/*
+    I. Variável em CSS
+    
+        A variável em CSS funciona de certo modo diferente do habitual
+        das linguagens de programação Entretando ela pode ser muito útil,
+        veja:
+
+            Em um código simples, com apenas algumas coisinhas para mecher,
+            pode ser prático mudar, por exemplo, a cor de um elemento um por um,
+            mas pensando a longo prazo, e códigos muito grandes fcia inviável troca
+            a cor de um elemento um por um, e é nesse ponto que as variáveis entram.
+
+            Observe como seria mais ou menos o caso sem variável:
+
+                elemento1 = azul
+                elemento2 = azul
+                elemento3 = azul
+
+                A escrita no código não é essa, mas vai servir bem para entender
+                a lógica. Veja que cada variável recebe o valor de uma cor, mas 
+                caso você queria alterar as cores desses elementos para vermelho,
+                você terá que altera um por um.
+            
+            Agora observe com a variável:
+
+                variavel = azul
+
+                elemento1 = variavel
+                elemento2 = variavel
+                elemento3 = variavel
+
+                Veja que agora os elementos recebem o valor contido na variavel.
+                Dessa forma, alterando o valor contido na variável, todos os
+                elementos são alterados também, para o mesmo valor contido na 
+                variável.
+
+
+*/
+:root{
+    /*
+        Esse é o campo de criação de uma variável em CSS, dentro de :root você pode
+        criar qualquer variável que for lhe dar suporte.
+
+        É possivel, como está nesse exemplo, mudar as cores dos elementos, como também
+        alterar a largura com a variável, ou qualquer mudança de elmento, basta entender
+        como funciona o uso da variável.
+    */
+    --color-principal: aquamarine;
+}
+.menu{
+    height: 100px;
+    width: 100%;
+    background-color: var(--color-principal)
+    /*
+        Para usar a variável, basta usar var(nome-variável), e para trocar o conteúdo, altere
+        em :root, que tudo que estiver usando irá se ingualar.
+    */
+}
+
+.botoes{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-01{
+    height: 50px;
+    width: 100px;
+    background-color: var(--color-principal)
+}
+.btn-02{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(185, 92, 228);
+}
+
