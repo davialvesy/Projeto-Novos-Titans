@@ -18,3 +18,18 @@ h1{
 #id-titulo h1{
     color: dodgerblue;
 }
+/*
+    É válido infomar que há diferença em como chamar
+    um ID e uma CLASS no CSS. De forma que, a CLASS
+    segue esse padrão:
+
+        .nome da classe
+
+        Basicamente, chama a CLASS com um ponto junto ao nome
+    
+    Já o ID possui uma formatação diferente, veja
+
+        #nome da classe
+
+        Basicamente, só trocar o ponto pela hashtag.
+*/
