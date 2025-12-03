@@ -11,14 +11,14 @@
         que antigamente eram feitas apenas com HTML.
 
         A duas maneiras de colocar o CSS presente em nossa
-        página web.
+        página web, são
 
         I.I Inserido Junto ao Ambiente HTML
 
             Dentro da tag <head>, basta adicionar a tag <style>, e
             ali você gerencia as alterações.
 
-        I.II Documento a parte
+        I.II Documento a Parte
 
             A melhor maneira de inserir a estilização do CSS na
             página web, é por meio de um documento externo feito
@@ -28,6 +28,7 @@
 
             Para o gerenciamento das modificações, você deve faze-las
             no documento específico de CSS.
+
     II. DIV
 
         Para que os navegadores entendam o conteúdo da página HTML,
@@ -42,31 +43,33 @@
         II.I Funcionalidade
 
             Como a div serve para agrupar outras tags, isso é muito
-            útil para o CSS, com isso possível fazer alterações em
-            blocos, onde você agrupo determinados elementos, e muda
-            o visual apenas deles, isso impede que elementos que você
-            não quer alterar mude junto dos outros.
+            útil para o CSS, com isso é possível fazer alterações em
+            blocos, onde você agrupa determinados elementos, e muda
+            o visual apenas dos elementos agrupados, isso impede que 
+            elementos que você não quer alterar mude junto dos outros.
     
     III. ID e CLASS
 
-        No CSS, se você alterar por e exemplo o <h1>, todo e qualquer <h1>
+        No CSS, se você alterar por exemplo o <h1>, todo e qualquer <h1>
         será alterado. Entretando, se for preciso que apenas um <h1> seja
         alterado, ou caso tiver duas divs, e você precise alterar as duas
-        de maneira distinta.
-
-        É para isso que serve o ID e a CLASS em HTML, ela singularizam uma tag,
-        onde há várias semelhantes a ela no código.
+        de maneira distinta, é para isso que serve o ID e a CLASS em HTML,
+        elas singularizam uma tag, sendo possível realizar modificações
+        apenas nelas.
 
         Bom, mas qual a diferença?
-        Basicamente a diferença que existe, é que só pode exister um ID com o mesmo nome
-        no código, ouse ja
+
+        Basicamente a diferença que existe, é que só pode exister um ID 
+        com o mesmo nome no código.
 
             <div id="container">
 
             </div>
 
-        Como a div está com o ID de container, só ela poderá ter esse ID, nenhuma outra tag
-        poderá usar aquele ID novamento no código.
+        Como a div está com o ID de container, só ela poderá ter esse ID, 
+        nenhuma outra tag poderá usar aquele ID novamento no código.Portanto, 
+        a CLASS não possui essa característica, então seria possível ter duas
+        class button por exemplo.
 -->
 
 <!DOCTYPE html>
@@ -75,10 +78,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Introdução CSS</title>
         <link rel="stylesheet" href="style.css"><!--TAG de link para o CSS-->
     <!--
-        <style>/*I.I Primeira Forma de Estilização*/
+        /*I.I Estilização Diretamente no Código HTML*/
+
+        <style>
             
             h1{
                 color: blue; /*Muda a Cor de Todo <h1>*/
@@ -97,15 +102,19 @@
     <body>
         <h1>Olá, mundo!</h1>
 
-        <div class="titulo">
+        <div class="titulo"><!--Class Titulo para ficar fácil de gerenciar depois no CSS-->
             <h1>Olá, mundo!!</h1>
         </div>
         <div class="titulo">
             <h1>Hello, world!</h1>
         </div>
         <div id="id-titulo">
+            <!--
+                Diferencial da escrita adicionando 'id', dessa forma
+                não é intuítivo, mas serve bem para mostrar que basta 
+                o id não ter a mesma escrita igualmente mais de uma vez.
+            -->
             <h1>Olá mundo!!!</h1>
         </div>
-
     </body>
 </html>
