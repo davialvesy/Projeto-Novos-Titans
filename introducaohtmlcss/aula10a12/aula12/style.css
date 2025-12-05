@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./imgs/background.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 800px; /*Largura*/
+    height: 100%;
+}
+.container-image{
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.container-image p{
+    color: aliceblue;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.img{
+    background-image: url(./imgs/Image.jpeg);
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: bottom;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.container-botoes{
+    /*background-color: rgb(97, 11, 11);*/
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+.botao{
+    width: 90%;
+    height: 60px;
+    /*background-color: brown;*/
+    border:2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 9px -7px 0px -3px rgba(0,0,0,1);
+-webkit-box-shadow: 9px -7px 0px -3px rgba(0,0,0,1);
+-moz-box-shadow: 9px -7px 0px -3px rgba(0,0,0,1);
+}
+
+.botao i{
+    margin-left: 10px;
+}
+.botao p{
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+}
+.botao:hover{
+    background-color: rgb(51, 139, 211);
+    transition: 1.5s;
+    cursor: pointer;
+}
