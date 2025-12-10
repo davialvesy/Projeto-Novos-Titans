@@ -1,0 +1,76 @@
+table{
+    width: 600px;
+    /* 
+        height define a altura de um elemento, e
+        width define a largura de um elemento.
+
+        Não incluem preechimento(padding), bordas ou
+        margens. Ela definem a largura e a altura dentro
+        do padding, border e margin.
+    */
+    text-align: center;
+    /*
+        text-align é usada para definir o alinhamento
+        horizontal do texto.
+
+        left, alinha a esquerda
+        
+        right, alinha a direita
+
+        center, centraliza o texto
+
+        justify, estica as linhas para
+        que elas tenham a mesma largura
+
+    */
+}
+thead{
+    background-color: cadetblue;
+    /*
+        background-color define a cor do plano
+        de fundo de um elemento.
+    */
+}
+th{
+    padding: 10px 0;
+    /*
+        padding define para gerar espaço ao redor
+        do conteúdo de um elemento, dentro de qualquer
+        borda definida.
+
+        É possível definir o padding de qualquer lado de um
+        elemento com o CSS.
+
+        padding-top, define o padding superior.
+        padding-right, define o padding a direita.
+        padding-bottom, define o padding inferior.
+        padding-left, define o pedding a esquerda.
+    */
+    color: aliceblue;
+    /*
+        color define a cor de um elemento.
+    */
+}
+td{
+    padding: 10px 0;
+}
+td:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+    /*
+        cursor define a propriedade do ponteiro do mouse
+        ao passar por cima de um elemento.
+    */
+    transition: 1s;
+    /*
+        transition, nesse caso, define como vão se comportar 
+        as mudanças do hover, determinando em quanto tempo a 
+        transição das mudanças do hvoer.
+    */
+    color: aliceblue;
+}
+tbody tr:hover{
+    background-color: rgb(144, 211, 212);
+    cursor: pointer;
+    transition: 0.5s;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+body{
+    background-image: url(img/backgroundlogin.jpg);
+}
+.bg-black{
+    background-color: rgba(0, 0, 0, 0.452);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 300px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.61);
+    padding: 15px;
+}
+img{
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin-top: 25px;
+}
+.container-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+.input{
+    padding: 11px 10px;
+    background-color: rgb(45, 48, 50);
+    border: 1px solid rgba(0, 0, 0, 0.61);
+    outline: none;
+    border-radius: 3px;
+}
+.input:focus{
+    border: 1px solid red;
+}
+.remember{
+    margin-top: 15px;
+}
+.enter{
+    width: 100%;
+    padding: 11px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+.code{
+    width: 100%;
+    padding: 11px;
+    background-color: rgb(45, 48, 50);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.enter:hover{
+    opacity: 90%;
+    transition: 1s;
+}
+.code:hover{
+    opacity: 90%;
+    transition: 1s;
+}
+
+.choice{
+    text-align: center;
+    padding: 15px;
+}
+span{
+    font-weight: bold;
+    cursor: pointer;
+}
+.first-access{
+    text-align: left;
+    padding: 15px 0;
+    color: gray;
+}
+@media(max-width: 1024px){
+    .container{
+        background-color: rgb(0, 0, 0);
+        height: 100vh;
+        width: 100%;
+        padding: 130px;
+    }
+}

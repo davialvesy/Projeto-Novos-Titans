@@ -1,0 +1,74 @@
+<!--
+   I. Criação de uma tabela simples em HTML e CSS
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <!--
+            A tag <table> indica ao navegador
+            que ali haverá uma tabela
+        -->
+        <thead>
+            <!--
+                A tag <thead> indica que essa é
+                a parte do cabeçalho da tabela,
+                nessa parte é onde se encontra
+                os títulos das colunas.
+            -->
+            <tr>
+                <!--
+                    A tag <tr> contém os dados que seram
+                    adicionados a tabela, podendo ser no
+                    cabeçalho.
+                -->
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--
+                A tag <tbody> sinaliza que 
+                aqui irá vir o corpo da tabela,
+                onde seram colocados os dados 
+                específicos.
+            -->
+            <tr>
+                <!--
+                    A tag <tr> define as linhas da tabela,
+                    na parte do corpo.
+                -->
+                <td>Pão</td>
+                <!--
+                    A tag <td> é a reponsável por colocar
+                    os dados nas linhas, sendo centralizados 
+                    de forma automatica.
+                -->
+                <td>1</td>
+                <td>7.49</td>
+                <td>7.49</td>
+            </tr>
+            <tr>
+                <td>Pizza</td>
+                <td>3</td>
+                <td>40.00</td>
+                <td>120.00</td>
+            </tr>
+            <tr>
+                <td>Pão</td>
+                <td>1</td>
+                <td>7.49</td>
+                <td>7.49</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

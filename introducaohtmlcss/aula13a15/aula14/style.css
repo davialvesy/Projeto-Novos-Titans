@@ -1,0 +1,62 @@
+/*
+    II. Display
+
+        Uma propriedade importante que define se um elemento
+        é trato em linha, ou em bloco, sendo possível altera 
+        essa propriedade.
+
+        Cada elemento HTML possui um display padrão dependendo
+        do tipo do elemento.
+
+        DISPLAY: block
+
+            Um elemento com a propriedade block sempre começa
+            em uma nova linha, e ocupa toda a largura disponível.
+
+            Exemplos de elementos display block por padrão:
+                <div>
+                <h1> - <h6>
+                <p>
+                <form>
+                <header>
+                <footer>
+                <section>
+
+        DISPLAY: inline
+
+            Um elemento inline NÃO começa em uma nova linha, 
+            e ocupa apenas a largura necessária, não permitindo
+            a modificação da mesma.
+
+            Exemplos elementos inline:
+                <a>
+                <span>
+                <img>
+*/
+.primeira-div{
+    background-color: aquamarine;
+    height: 30px;
+    width: 300px;
+}
+.segunda-div{
+    background-color: crimson;
+    height: 30px;
+}
+.primeiro-link{
+    background-color: aqua;
+}
+strong{
+    background-color: green;
+}
+.terceira-div{
+    background-color: blueviolet;
+    height: 38px;
+    width: 308px;
+    display: inline-block;
+}
+.quarta-div{
+    background-color: aqua;
+    height: 38px;
+    width: 308px;
+    display: inline-block;
+}
