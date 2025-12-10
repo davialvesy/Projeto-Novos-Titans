@@ -41,7 +41,6 @@ body{
     margin-bottom: 15px;
 }
 .container-botoes{
-    /*background-color: rgb(97, 11, 11);*/
     display: flex;
     align-items: center;
     margin-top: 20px;
@@ -51,7 +50,6 @@ body{
 .botao{
     width: 90%;
     height: 60px;
-    /*background-color: brown;*/
     border:2px solid black;
     border-radius: 10px;
     display: flex;
